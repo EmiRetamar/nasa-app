@@ -19,7 +19,7 @@ export class MaterialInputComponent implements OnInit {
 
 	ngOnInit() {
 		setTimeout(() => {
-			this.usuario.nombre = 'Juan';
+			this.usuario.nombre = 'Peter';
 			this.placeholder.nombre = 'Apellido';
 		}, 2000);
 	}
