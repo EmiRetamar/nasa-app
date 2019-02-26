@@ -1,4 +1,4 @@
 export interface Rover {
-  id: number;
-  name: string;
+	id: number;
+	name: string;
 }

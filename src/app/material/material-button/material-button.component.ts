@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ed-material-button',
-  templateUrl: './material-button.component.html',
-  styleUrls: ['./material-button.component.css']
+	selector: 'ed-material-button',
+	templateUrl: './material-button.component.html',
+	styleUrls: ['./material-button.component.css']
 })
 export class MaterialButtonComponent implements OnInit {
 
-  formulario = {
-    valido: true
-  };
+	formulario = {
+		valido: true
+	};
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-    setTimeout(() => {
-      this.formulario.valido = false;
-    }, 2000);
+	ngOnInit() {
+		setTimeout(() => {
+			this.formulario.valido = false;
+		}, 2000);
 
-  }
+	}
 
-  onClick($event) {
-    console.log('Evento Click', $event);
-  }
+	onClick($event) {
+		console.log('Evento Click', $event);
+	}
 
 }

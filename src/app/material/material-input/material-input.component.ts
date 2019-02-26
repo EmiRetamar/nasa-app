@@ -1,35 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ed-material-input',
-  templateUrl: './material-input.component.html',
-  styleUrls: ['./material-input.component.css']
+	selector: 'ed-material-input',
+	templateUrl: './material-input.component.html',
+	styleUrls: ['./material-input.component.css']
 })
 export class MaterialInputComponent implements OnInit {
 
-  usuario = {
-    nombre: 'Luis'
-  };
+	usuario = {
+		nombre: 'Emi'
+	};
 
-  placeholder = {
-    nombre: 'Nombre'
-  };
+	placeholder = {
+		nombre: 'Nombre'
+	};
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-    setTimeout(() => {
-      this.usuario.nombre = 'Juan';
-      this.placeholder.nombre = 'Apellido';
-    }, 2000);
-  }
+	ngOnInit() {
+		setTimeout(() => {
+			this.usuario.nombre = 'Juan';
+			this.placeholder.nombre = 'Apellido';
+		}, 2000);
+	}
 
-  onKeyUp($event) {
-    console.log('keyUp, ', $event);
-  }
+	onKeyUp($event) {
+		console.log('keyUp, ', $event);
+	}
 
-  onBlur($event: FocusEvent) {
-    console.log('onBlur, ', $event);
-  }
+	onBlur($event: FocusEvent) {
+		console.log('onBlur, ', $event);
+	}
 
 }
